@@ -1,0 +1,960 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (943) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (963) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (973) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (973) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (973) main_task: Returned from app_main()[0m
+[0;32mI (993) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1013) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (3993) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (7013) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (10033) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (13053) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (16073) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (19093) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (22113) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (25133) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;31mE (28153) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (28153) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (31173) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (33223) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (33273) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (33533) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (33903) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (34193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (34193) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (37223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (37223) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (40243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (40253) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (43273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (43283) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (46303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (46313) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (49333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (49343) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (52363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (52373) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (55393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (55403) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (58423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (58433) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (61453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (61463) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (64053) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (64053) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (64483) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (64483) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (64933) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (64983) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (65243) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (65643) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (67503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (67503) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;31mE (70533) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (70533) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (73553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (73553) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (76573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (76583) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (79603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (79613) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (82633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (82643) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (85663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (85673) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (88693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (88703) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (91723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (91733) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (94753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (94763) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (95763) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (95763) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (96103) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (96143) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (96393) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (96743) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (97783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (97793) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (100813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (100813) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (103843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (103843) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 38.0[0m
+[0;32mI (106873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (106873) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (109903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (109903) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (112933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (112933) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (115963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (115963) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (118993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (118993) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (122023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (122023) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (125043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (125053) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (126833) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (126833) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (126933) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (126963) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (127223) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (127623) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (128073) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (128083) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (131103) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (131103) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (134133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (134143) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (137163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (137173) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (140193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (140193) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (143223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (143223) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (146253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (146263) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (149283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (149293) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (152313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (152313) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (155343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (155343) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (157713) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (157723) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (157833) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (157863) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (158123) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (158373) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (158383) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (158383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (158493) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (161403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (161403) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (164433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (164433) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (167463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (167463) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (170493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (170493) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (173523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (173523) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (176553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (176553) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (179583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (179583) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (182613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (182613) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (185643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (185643) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (188623) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (188623) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (188673) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (188673) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (188953) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (188993) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (189283) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (189743) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (191693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (191693) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (194723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (194733) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (197753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (197763) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (200783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (200793) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (203813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (203823) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (206843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (206853) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (209873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (209883) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (212903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (212903) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;31mE (215933) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (215933) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (218953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (218963) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (219833) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (219833) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (219993) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (220033) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (220293) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (220663) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;31mE (221983) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (221983) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (225003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (225003) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (228023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (228033) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (231053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (231063) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (234083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (234093) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (237113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (237123) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (240143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (240153) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (243173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (243183) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (246203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (246213) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (249233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (249243) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (250753) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (250753) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (250983) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (251023) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (251283) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (251623) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (252263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (252263) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (255293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (255303) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (258323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (258333) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (261353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (261363) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (264383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (264393) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (267413) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (267423) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (270443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (270453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (273473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (273483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (276503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (276513) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (279533) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (279543) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (281713) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (281713) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (282123) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (282163) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (282453) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (282563) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (282563) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (282573) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (282823) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (285593) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (285603) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (288623) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (288633) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (291653) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (291663) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (294683) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (294693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (297713) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (297723) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (300743) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (300753) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (303773) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (303783) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (306803) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (306813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (309833) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (309843) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (312863) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (312873) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (312943) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (312943) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (313153) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (313203) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (313453) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (313833) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (315893) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (315893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (318923) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (318923) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (321943) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (321953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (324973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (324983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (328003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (328013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (331033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (331043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (334063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (334073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (337093) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (337103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (340123) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (340133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (343153) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (343163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (343923) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (343923) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (344393) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (344433) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (344693) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (345033) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (346183) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (346193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (349213) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (349223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (352243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (352253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (355273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (355283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (358303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (358313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (361333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (361343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (364363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (364373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (367393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (367403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (370423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (370433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (373453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (373463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (375123) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (375123) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (375413) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (375463) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (375723) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (376053) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (376483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (376483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (379513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (379523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (382543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (382553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (385573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (385583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (388603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (388613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (391633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (391643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (394663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (394673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (397693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (397703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (400723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (400733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (403753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (403763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (406143) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (406143) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (406293) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (406323) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (406603) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (406783) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (406793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (406793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (406943) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (409813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (409813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (412843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (412843) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (415873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (415873) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (418903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (418903) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (421923) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (421933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (424953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (424963) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (427983) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (427993) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (431013) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (431023) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (434043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (434053) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (437033) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (437033) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (437073) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (437073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (437223) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (437253) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (437513) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (437953) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (440093) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (440093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (443123) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (443133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (446153) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (446163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (449183) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (449193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (452213) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (452223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (455243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (455253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (458273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (458283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (461303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (461313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (464333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (464343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (467363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (467373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (468073) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (468073) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (468343) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (468383) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (468673) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (469033) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (470393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (470393) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (473423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (473433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (476453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (476463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (479483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (479493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (482513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (482523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (485543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (485553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (488573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (488583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (491603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (491613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (494633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (494643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (497663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (497673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (499123) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (499123) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (499503) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (499543) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (499793) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (500203) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (500693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (500693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (503723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (503733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (506753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (506763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (509783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (509793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (512813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (512823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (515843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (515853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (518873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (518883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (521903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (521913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (524933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (524943) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (527963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (527973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (530293) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (530293) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (530523) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (530563) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (530813) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (530993) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (530993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (531003) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (531253) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (534023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (534033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (537053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (537063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (540083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (540093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (543113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (543123) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (546143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (546153) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (549173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (549183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (552203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (552213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (555233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (555243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (558263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (558273) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (561293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (561303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (561373) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (561373) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (561713) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (561753) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (562003) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (562383) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (564323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (564323) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (567353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (567353) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (570383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (570383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (573403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (573413) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (576433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (576443) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (579463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (579473) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (582493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (582503) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (585523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (585533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (588553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (588563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (591583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (591593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (592473) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (592473) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (592723) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (592773) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (593023) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (593493) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (594613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (594613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (597643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (597653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (600673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (600683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (603703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (603713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (606733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (606743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (609763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (609773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (612793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (612803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (615823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (615833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (618853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (618863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (621883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (621893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;33mW (623583) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (623583) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (623743) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (623773) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (624033) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (624443) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;31mE (624913) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (624913) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (627933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (627933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 35.0[0m
+[0;32mI (630963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (630973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (633993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (634003) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (637023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (637033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (640053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (640063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (643083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (643093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (646113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (646123) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (649143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (649153) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (652173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (652183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (654533) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (654533) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (654683) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (654723) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (655013) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (655203) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (655203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (655213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (655463) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (658233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (658243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (661263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (661273) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (664293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (664303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (667323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (667333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (670353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (670363) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (673383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (673393) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (676413) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (676423) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (679443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (679453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (682473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (682483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (685503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (685513) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (685583) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (685583) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (685773) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (685813) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (686063) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (686463) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;31mE (688533) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (688533) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (691553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (691553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (694583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (694593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (697613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (697623) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (700643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (700653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (703673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (703683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (706703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (706713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (709733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (709743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (712763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (712773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (715793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (715803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (716563) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (716563) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (716653) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (716693) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (716953) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (717353) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (718823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (718823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (721853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (721863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (724883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (724893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;31mE (727913) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (727913) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (730933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (730933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (733953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (733963) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (736983) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (736993) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (740013) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (740023) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (743043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (743053) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (746073) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (746083) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (747443) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (747443) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (747693) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (747733) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (747983) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (748363) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (749103) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (749103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (752133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (752133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (755163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (755163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (758193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (758193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (761223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (761223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (764243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (764253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (767273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (767283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (770303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (770313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (773333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (773343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (776363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (776373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (778453) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (778453) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (778773) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (778813) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (779073) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (779393) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (779393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (779403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (779443) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (782423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (782433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (785453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (785463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (788483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (788493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (791513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (791523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (794543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (794553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (797573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (797583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (800603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (800613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (803633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (803643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (806663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (806673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (809533) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (809533) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (809693) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (809693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (809873) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (809913) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (810143) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (810523) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (812713) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (812723) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;31mE (815743) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (815743) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (818763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (818763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (821783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (821793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (824813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (824823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (827843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (827853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (830873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (830883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (833903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (833913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (836933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (836943) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (839963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (839973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (840613) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (840613) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (840833) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (840873) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (841133) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (841503) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (842993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (842993) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (846023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (846023) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (849053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (849053) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (852083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (852083) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (855113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (855113) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (858133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (858143) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (861163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (861173) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (864193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (864203) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (867223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (867233) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (870253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (870263) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (871593) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (871593) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (871843) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (871893) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (872153) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (872523) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (873283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (873293) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (876313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (876323) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (879343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (879353) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (882373) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (882383) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (885403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (885413) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (888433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (888443) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (891463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (891473) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (894493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (894503) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (897523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (897533) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (900553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (900563) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (902613) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (902613) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (903163) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (903203) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (903453) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (903583) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (903583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (903583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (903863) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (906603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (906603) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (909633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (909643) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (912663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (912673) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (915693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (915703) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (918723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (918733) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (921753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (921763) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (924783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (924793) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (927813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (927823) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (930843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (930853) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (933873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (933883) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;33mW (933953) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (933953) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (934183) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (934223) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (934473) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (934823) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (936903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (936903) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (939933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (939943) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (942963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (942973) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (945993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (946003) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (949023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (949033) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (952053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (952063) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (955083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (955093) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (958113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (958123) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 36.0[0m
+[0;32mI (961143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (961153) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (964173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (964183) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (964913) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (964913) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (965023) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (965063) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (965323) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (965723) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (967203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (967203) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (970233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (970243) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (973263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (973273) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (976293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (976303) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (979323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (979333) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (982353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (982363) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (985383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (985393) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (988413) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (988423) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (991443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (991453) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (994473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (994483) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (995813) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (995813) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (996153) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (996193) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (996443) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (996823) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (997503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (997503) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1000533) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1000533) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1003563) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1003563) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1006593) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1006593) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1009623) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1009623) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1012653) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1012653) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1015683) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1015683) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1018713) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1018713) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1021743) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1021743) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1024773) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1024773) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;33mW (1026913) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (1026913) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (1027063) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (1027123) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (1027373) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (1027723) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (1027803) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1027803) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1030823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1030833) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1033853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1033863) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1036883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1036893) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1039913) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1039923) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1042943) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1042953) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1045973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1045983) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m
+[0;32mI (1049003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (1049013) DHT_NOTIFY: 🔁 Notificado: Temp: 31.0, Hum: 37.0[0m

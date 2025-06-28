@@ -1,0 +1,1506 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 22 2025 23:50:11[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=209bch (133564) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=000309e4 vaddr=3ffbdb60 size=04b6ch ( 19308) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00035558 vaddr=40080000 size=0aac0h ( 43712) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7bcbch (507068) map[0m
+[0;32mI (349) esp_image: segment 4: paddr=000bbce4 vaddr=4008aac0 size=0c9b0h ( 51632) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (394) cpu_start: Multicore app[0m
+[0;32mI (402) cpu_start: Pro cpu start user code[0m
+[0;32mI (402) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (402) app_init: Application information:[0m
+[0;32mI (405) app_init: Project name:     gatt_multi_connect[0m
+[0;32mI (411) app_init: App version:      1[0m
+[0;32mI (415) app_init: Compile time:     Jun 22 2025 23:49:55[0m
+[0;32mI (421) app_init: ELF file SHA256:  cf6096b60...[0m
+[0;32mI (427) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (432) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (437) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (442) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (454) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (460) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFC7180 len 00018E80 (99 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (484) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (491) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (499) spi_flash: detected chip: generic[0m
+[0;32mI (502) spi_flash: flash io: dio[0m
+[0;33mW (506) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (520) coexist: coex firmware version: 4482466[0m
+[0;32mI (525) main_task: Started on CPU0[0m
+[0;32mI (535) main_task: Calling app_main()[0m
+[0;32mI (555) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (555) BTDM_INIT: Bluetooth MAC: 08:d1:f9:cb:bd:3e[0m
+[0;32mI (555) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (975) GATTC_MULTIPLE_DEMO: REG_EVT[0m
+[0;32mI (975) main_task: Returned from app_main()[0m
+[0;32mI (985) GATTC_MULTIPLE_DEMO: REG_EVT[0m
+[0;32mI (985) GATTC_MULTIPLE_DEMO: REG_EVT[0m
+[0;32mI (985) GATTC_MULTIPLE_DEMO: Scan start success[0m
+[0;32mI (1005) GATTC_MULTIPLE_DEMO: a8 6f 36 6a 66 8c [0m
+[0;32mI (1005) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 29, Scan Response Len 0[0m
+[0;32mI (1005) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1005) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1015) GATTC_MULTIPLE_DEMO: 14 62 55 39 4d 47 [0m
+[0;32mI (1015) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (1025) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1035) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1035) GATTC_MULTIPLE_DEMO: 2c fe 4f 22 db 48 [0m
+[0;32mI (1045) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (1045) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1055) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1055) GATTC_MULTIPLE_DEMO: 65 17 43 a2 49 08 [0m
+[0;32mI (1065) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 31, Scan Response Len 16[0m
+[0;32mI (1075) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1075) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1085) GATTC_MULTIPLE_DEMO: 2c bc bb 0e 1f b2 [0m
+[0;32mI (1085) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 17, Scan Response Len 25[0m
+[0;32mI (1095) GATTC_MULTIPLE_DEMO: Searched Device Name Len 10[0m
+[0;32mI (1105) GATTC_MULTIPLE_DEMO: Gyro Mouse[0m
+[0;32mI (1105) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1105) GATTC_MULTIPLE_DEMO: Searched device Gyro Mouse[0m
+[0;32mI (1125) GATTC_MULTIPLE_DEMO: Stop scan successfully[0m
+[0;32mI (1125) GATTC_MULTIPLE_DEMO: 1c 86 9a 42 9e 7f [0m
+[0;32mI (1125) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (1135) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1135) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1145) GATTC_MULTIPLE_DEMO: 2c bc bb 0e 1f b2 [0m
+[0;32mI (1145) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 17, Scan Response Len 25[0m
+[0;32mI (1155) GATTC_MULTIPLE_DEMO: Searched Device Name Len 10[0m
+[0;32mI (1165) GATTC_MULTIPLE_DEMO: Gyro Mouse[0m
+[0;32mI (1165) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1175) GATTC_MULTIPLE_DEMO: 14 62 55 39 4d 47 [0m
+[0;32mI (1175) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (1185) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (1185) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (1205) GATTC_MULTIPLE_DEMO: ESP_GATTC_OPEN_EVT conn_id 0, if 3, status 0, mtu 23[0m
+[0;32mI (1205) GATTC_MULTIPLE_DEMO: REMOTE BDA:[0m
+[0;32mI (1205) GATTC_MULTIPLE_DEMO: 2c bc bb 0e 1f b2 [0m
+[0;32mI (2185) GATTC_MULTIPLE_DEMO: Status 0, MTU 512, conn_id 0[0m
+[0;32mI (2195) GATTC_MULTIPLE_DEMO: SEARCH RES: conn_id = 0 is primary service 1[0m
+[0;32mI (2195) GATTC_MULTIPLE_DEMO: start handle 110 end handle 65535 current handle value 110[0m
+[0;32mI (2205) GATTC_MULTIPLE_DEMO: UUID16: fff0[0m
+[0;32mI (2245) GATTC_MULTIPLE_DEMO: write descr success[0m
+[0;32mI (2275) GATTC_MULTIPLE_DEMO: write char success[0m
+[0;32mI (2285) GATTC_MULTIPLE_DEMO: Scan start success[0m
+[0;32mI (2305) GATTC_MULTIPLE_DEMO: 2c bc bb 0e 1f b2 [0m
+[0;32mI (2305) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2305) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2315) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2315) GATTC_MULTIPLE_DEMO: 1c 86 9a 42 9e 7f [0m
+[0;32mI (2325) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2325) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2335) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2405) GATTC_MULTIPLE_DEMO: 03 88 19 6e 68 b9 [0m
+[0;32mI (2405) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2415) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2415) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2455) GATTC_MULTIPLE_DEMO: 1c 86 9a 42 9e 7f [0m
+[0;32mI (2455) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2455) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2465) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2545) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (2545) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-329, GY=148, GZ=-222[0m
+[0;32mI (2605) GATTC_MULTIPLE_DEMO: 1c 86 9a 42 9e 7f [0m
+[0;32mI (2605) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2605) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2615) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2685) GATTC_MULTIPLE_DEMO: 03 88 19 6e 68 b9 [0m
+[0;32mI (2685) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2695) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2695) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2705) GATTC_MULTIPLE_DEMO: 03 88 19 6e 68 b9 [0m
+[0;32mI (2705) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 0, Scan Response Len 0[0m
+[0;32mI (2715) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2715) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2755) GATTC_MULTIPLE_DEMO: 77 2c 11 9c 03 3d [0m
+[0;32mI (2755) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 21, Scan Response Len 0[0m
+[0;32mI (2755) GATTC_MULTIPLE_DEMO: Searched Device Name Len 12[0m
+[0;32mI (2755) GATTC_MULTIPLE_DEMO: Xiaomi Pad 6[0m
+[0;32mI (2765) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2765) GATTC_MULTIPLE_DEMO: Searched device Xiaomi Pad 6[0m
+[0;32mI (2775) GATTC_MULTIPLE_DEMO: 1c 86 9a 42 9e 7f [0m
+[0;32mI (2775) GATTC_MULTIPLE_DEMO: Searched Adv Data Len 28, Scan Response Len 0[0m
+[0;32mI (2785) GATTC_MULTIPLE_DEMO: Searched Device Name Len 0[0m
+[0;32mI (2795) GATTC_MULTIPLE_DEMO:  [0m
+[0;32mI (2805) GATTC_MULTIPLE_DEMO: Stop scan successfully[0m
+[0;32mI (3035) GATTC_MULTIPLE_DEMO: ESP_GATTC_OPEN_EVT conn_id 1, if 5, status 0, mtu 23[0m
+[0;32mI (3035) GATTC_MULTIPLE_DEMO: REMOTE BDA:[0m
+[0;32mI (3035) GATTC_MULTIPLE_DEMO: 77 2c 11 9c 03 3d [0m
+[0;32mI (3435) GATTC_MULTIPLE_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (3615) GATTC_MULTIPLE_DEMO: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 12,latency = 0, timeout = 600[0m
+[0;32mI (5545) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (5545) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-336, GY=151, GZ=-213[0m
+[0;32mI (5955) GATTC_MULTIPLE_DEMO: Status 0, MTU 512, conn_id 1[0m
+[0;32mI (5955) GATTC_MULTIPLE_DEMO: SEARCH RES: conn_id = 1 is primary service 1[0m
+[0;32mI (5955) GATTC_MULTIPLE_DEMO: start handle 87 end handle 94 current handle value 87[0m
+[0;32mI (5965) GATTC_MULTIPLE_DEMO: UUID16: 180d[0m
+[0;32mI (6015) GATTC_MULTIPLE_DEMO: write descr success[0m
+[0;31mE (6075) GATTC_MULTIPLE_DEMO: Write char failed, error status = 3[0m
+[0;32mI (7035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (8025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (8575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (8575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-335, GY=169, GZ=-220[0m
+[0;32mI (9015) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (10035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (11085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (11575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (11575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=154, GZ=-222[0m
+[0;32mI (12045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (13065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (14055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (14575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (14575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-331, GY=120, GZ=-210[0m
+[0;32mI (15075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (16065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (17085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (17575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (17575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-356, GY=153, GZ=-227[0m
+[0;32mI (18105) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (19095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (20115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (20575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (20575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=152, GZ=-197[0m
+[0;32mI (21105) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (22125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (23145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (23575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (23575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=132, GZ=-190[0m
+[0;32mI (24165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (25185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (26175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (26575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (26575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-342, GY=170, GZ=-216[0m
+[0;32mI (27195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (28215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (29265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (29575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (29575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-329, GY=158, GZ=-224[0m
+[0;32mI (30255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (31215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (32205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (32575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (32585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-320, GY=159, GZ=-226[0m
+[0;32mI (33225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (34245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (35235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (35575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (35585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-319, GY=189, GZ=-224[0m
+[0;32mI (36255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (37275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (38265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (38575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (38585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-336, GY=172, GZ=-219[0m
+[0;32mI (39285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (40305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (41295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (41575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (41585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-324, GY=144, GZ=-186[0m
+[0;32mI (42315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (43305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (44355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (44575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (44585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-337, GY=160, GZ=-211[0m
+[0;32mI (45345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (46335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (47385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (47575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (47585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-331, GY=172, GZ=-217[0m
+[0;32mI (48345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (49395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (50355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (50575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (50585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-351, GY=159, GZ=-199[0m
+[0;32mI (51375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (52395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (53385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (53575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (53585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-313, GY=166, GZ=-227[0m
+[0;32mI (54405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (55425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (56415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (56605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (56615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-337, GY=165, GZ=-230[0m
+[0;32mI (57435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (58425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (59445) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (59605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (59615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-321, GY=170, GZ=-226[0m
+[0;32mI (60465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (61485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (62475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (62605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (62615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=158, GZ=-241[0m
+[0;32mI (63465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (64515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (65505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (65605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (65615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-313, GY=176, GZ=-222[0m
+[0;32mI (66525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (67545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (68505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (68605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (68615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=164, GZ=-216[0m
+[0;32mI (69525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (70545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (71535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (71605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (71615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-342, GY=160, GZ=-212[0m
+[0;32mI (72555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (73545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (74565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (74615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (74615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-331, GY=142, GZ=-233[0m
+[0;32mI (75555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (76575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (77595) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (77615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (77615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-325, GY=158, GZ=-229[0m
+[0;32mI (78585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (79605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (80595) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (80615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (80615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-328, GY=169, GZ=-199[0m
+[0;32mI (81615) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (82635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (83615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (83615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-308, GY=140, GZ=-203[0m
+[0;32mI (83625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (84645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (85665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (86615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (86615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-335, GY=163, GZ=-205[0m
+[0;32mI (86655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (87675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (88665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (89615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (89615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=185, GZ=-234[0m
+[0;32mI (89715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (90735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (91695) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (92615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (92615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-336, GY=145, GZ=-212[0m
+[0;32mI (92715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (93735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (94755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (95615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (95615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-332, GY=155, GZ=-197[0m
+[0;32mI (95745) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (96735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (97755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (98615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (98615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-335, GY=145, GZ=-245[0m
+[0;32mI (98775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (99795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (100785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (101615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (101615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-342, GY=146, GZ=-210[0m
+[0;32mI (101775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (102795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (103845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (104615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (104615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-322, GY=169, GZ=-241[0m
+[0;32mI (104805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (105855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (106815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (107645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (107645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-353, GY=158, GZ=-245[0m
+[0;32mI (107845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (108865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (109855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (110645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (110645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-333, GY=191, GZ=-199[0m
+[0;32mI (110905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (111865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (112915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (113645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (113645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-334, GY=143, GZ=-214[0m
+[0;32mI (113935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (114895) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (115915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (116645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (116645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-323, GY=150, GZ=-220[0m
+[0;32mI (116935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (117925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (118915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (119645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (119645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-345, GY=170, GZ=-226[0m
+[0;32mI (119935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (120985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (121945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (122645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (122645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-311, GY=169, GZ=-212[0m
+[0;32mI (122965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (123985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (124975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (125645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (125645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-324, GY=158, GZ=-209[0m
+[0;32mI (125995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (126985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (128005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (128645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (128645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-339, GY=154, GZ=-214[0m
+[0;32mI (128995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (130015) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (131035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (131645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (131645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-341, GY=170, GZ=-223[0m
+[0;32mI (132055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (133045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (134035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (134645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (134645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-334, GY=145, GZ=-217[0m
+[0;32mI (135055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (136075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (137095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (137645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (137645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-324, GY=170, GZ=-242[0m
+[0;32mI (138085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (139135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (140095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (140645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (140645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-321, GY=149, GZ=-208[0m
+[0;32mI (141115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (142135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (143125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (143645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (143645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-323, GY=152, GZ=-221[0m
+[0;32mI (144175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (145135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (146155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (146645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (146645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-320, GY=175, GZ=-219[0m
+[0;32mI (147145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (148165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (149215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (149645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (149645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-311, GY=165, GZ=-205[0m
+[0;32mI (150175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (151195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (152185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (152645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (152645) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-342, GY=177, GZ=-205[0m
+[0;32mI (153205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (154285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (155215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (155705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (155705) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-329, GY=144, GZ=-212[0m
+[0;32mI (156235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (157255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (158245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (158675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (158675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-321, GY=174, GZ=-210[0m
+[0;32mI (159265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (160255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (161275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (161675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (161675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-344, GY=156, GZ=-220[0m
+[0;32mI (162295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (163315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (164305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (164675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (164675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-318, GY=133, GZ=-217[0m
+[0;32mI (165325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (166315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (167365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (167675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (167675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-346, GY=164, GZ=-212[0m
+[0;32mI (168325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (169345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (170365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (170675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (170675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-325, GY=138, GZ=-238[0m
+[0;32mI (171385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (172375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (173395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (173675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (173675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-348, GY=137, GZ=-212[0m
+[0;32mI (174385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (175405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (176395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (176675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (176685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-332, GY=173, GZ=-223[0m
+[0;32mI (177445) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (178465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (179425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (179675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (179685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-333, GY=158, GZ=-228[0m
+[0;32mI (180445) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (181465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (182455) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (182675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (182685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-332, GY=173, GZ=-222[0m
+[0;32mI (183475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (184465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (185515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (185675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (185685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-325, GY=137, GZ=-235[0m
+[0;32mI (186475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (187495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (188485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (188675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (188685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=154, GZ=-217[0m
+[0;32mI (189505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (190525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (191545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (191675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (191685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-341, GY=174, GZ=-228[0m
+[0;32mI (192565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (193525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (194545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (194675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (194685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-326, GY=158, GZ=-213[0m
+[0;32mI (195535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (196555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (197575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (197675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (197685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-322, GY=164, GZ=-221[0m
+[0;32mI (198565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (199585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (200605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (200675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (200685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-318, GY=180, GZ=-206[0m
+[0;32mI (201625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (202615) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (203635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (203705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (203715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-329, GY=163, GZ=-222[0m
+[0;32mI (204625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (205645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (206665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (206705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (206715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-320, GY=137, GZ=-220[0m
+[0;32mI (207655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (208675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (209665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (209705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (209715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-326, GY=148, GZ=-203[0m
+[0;32mI (210685) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (211675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (212695) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (212705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (212715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-358, GY=150, GZ=-230[0m
+[0;32mI (213715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (214705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (215705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (215715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-332, GY=155, GZ=-212[0m
+[0;32mI (215725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (216715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (217735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (218715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (218715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-348, GY=160, GZ=-237[0m
+[0;32mI (218725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (219745) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (220765) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (221715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (221715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-333, GY=162, GZ=-220[0m
+[0;32mI (221785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (222775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (223795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (224715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (224715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-345, GY=155, GZ=-202[0m
+[0;32mI (224785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (225805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (226855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (227715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (227715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=153, GZ=-211[0m
+[0;32mI (227815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (228835) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (229825) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (230715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (230715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-333, GY=177, GZ=-231[0m
+[0;32mI (230875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (231895) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (232885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (233715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (233715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=180, GZ=-240[0m
+[0;32mI (233875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (234925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (235885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (236715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (236715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-342, GY=151, GZ=-200[0m
+[0;32mI (236905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (237895) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (238945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (239715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (239715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-303, GY=179, GZ=-230[0m
+[0;32mI (239905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (240925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (241915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (242715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (242715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=157, GZ=-212[0m
+[0;32mI (242965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (243955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (244945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (245715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (245715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-330, GY=133, GZ=-208[0m
+[0;32mI (245995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (246955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (247975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (248715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (248715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-328, GY=146, GZ=-208[0m
+[0;32mI (248965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (249985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (251005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (251715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (251715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=156, GZ=-211[0m
+[0;32mI (252025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (253085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (254045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (254745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (254745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-321, GY=160, GZ=-212[0m
+[0;32mI (255065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (256025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (257045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (257745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (257745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-314, GY=145, GZ=-221[0m
+[0;32mI (258065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (259055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (260135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (260745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (260745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-350, GY=170, GZ=-217[0m
+[0;32mI (261065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (262115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (263135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (263745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (263745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-339, GY=170, GZ=-212[0m
+[0;32mI (264095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (265115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (266105) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (266745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (266745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-336, GY=135, GZ=-211[0m
+[0;32mI (267125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (268145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (269135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (269745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (269745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-224[0m
+[0;32mI (270155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (271145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (272165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (272745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (272745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-348, GY=169, GZ=-220[0m
+[0;32mI (273215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (274175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (275195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (275745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (275745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-329, GY=160, GZ=-217[0m
+[0;32mI (276185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (277205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (278225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (278745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (278745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-319, GY=149, GZ=-209[0m
+[0;32mI (279215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (280235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (281225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (281745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (281745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-317, GY=174, GZ=-215[0m
+[0;32mI (282245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (283235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (284255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (284745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (284745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-328, GY=184, GZ=-229[0m
+[0;32mI (285275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (286295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (287285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (287745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (287745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-351, GY=147, GZ=-221[0m
+[0;32mI (288305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (289325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (290315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (290745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (290745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-324, GY=163, GZ=-222[0m
+[0;32mI (291305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (292325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (293315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (293745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (293745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-302, GY=157, GZ=-229[0m
+[0;32mI (294335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (295355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (296375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (296745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (296745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-343, GY=172, GZ=-209[0m
+[0;32mI (297365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (298385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (299375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (299745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (299745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=141, GZ=-202[0m
+[0;32mI (300395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (301385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (302405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (302745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (302745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-335, GY=157, GZ=-222[0m
+[0;32mI (303395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (304415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (305435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (305775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (305775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-341, GY=166, GZ=-244[0m
+[0;32mI (306425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (307475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (308465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (308775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (308775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-334, GY=166, GZ=-217[0m
+[0;32mI (309455) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (310475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (311465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (311775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (311775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-361, GY=163, GZ=-224[0m
+[0;32mI (312545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (313505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (314495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (314775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (314775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-338, GY=170, GZ=-221[0m
+[0;32mI (315515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (316535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (317525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (317775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (317775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=150, GZ=-226[0m
+[0;32mI (318545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (319535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (320555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (320775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (320785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-348, GY=160, GZ=-218[0m
+[0;32mI (321575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (322565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (323585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (323775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (323785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-330, GY=154, GZ=-222[0m
+[0;32mI (324605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (325595) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (326615) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (326775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (326785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-343, GY=175, GZ=-231[0m
+[0;32mI (327635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (328625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (329645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (329775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (329785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-334, GY=156, GZ=-236[0m
+[0;32mI (330635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (331655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (332645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (332775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (332785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-341, GY=158, GZ=-227[0m
+[0;32mI (333665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (334685) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (335705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (335775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (335785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-308, GY=176, GZ=-231[0m
+[0;32mI (336725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (337715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (338705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (338775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (338785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-327, GY=153, GZ=-217[0m
+[0;32mI (339725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (340715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (341735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (341775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (341785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-351, GY=163, GZ=-210[0m
+[0;32mI (342725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (343745) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (344735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (344775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (344785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-320, GY=171, GZ=-226[0m
+[0;32mI (345755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (346805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (347765) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (347805) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (347815) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-336, GY=154, GZ=-193[0m
+[0;32mI (348785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (349775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (350775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (350785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-316, GY=145, GZ=-241[0m
+[0;32mI (350795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (351815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (352805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (353805) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (13 bytes)[0m
+[0;32mI (353815) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-339, GY=150, GZ=-225[0m
+[0;32mI (353855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (354815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (355835) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (356805) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (356815) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (356855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (357845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (358865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (359835) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (359845) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (359885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (360875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (361895) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (362875) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (362875) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (362915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (363905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (364925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (365935) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (365935) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (365945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (366935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (367955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (368945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (368995) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (368995) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (369965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (370985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (371975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (372025) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (372025) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (372995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (373985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (375005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (375085) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (375085) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (375995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (377015) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (378005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (378115) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (378115) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (379025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (380045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (381035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (381175) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (381175) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (382055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (383075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (384065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (384235) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (384235) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (385085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (386075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (387125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (387265) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (387265) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (388085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (389105) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (390125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (390325) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (390325) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (391115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (392135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (393125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (393355) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (393355) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (394205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (395135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (396275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (396415) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (396415) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (397185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (398205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (399225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (399475) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (399475) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (400245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (401205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (402375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (402505) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (402505) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (403245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (404235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (405255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (405565) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (405565) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (406275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (407295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (408255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (408595) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (408595) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (409275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (410295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (411285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (411655) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (411655) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (412305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (413295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (414315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (414715) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (414715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (415335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (416355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (417345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (417745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (417745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (418365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (419385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (420375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (420805) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (420805) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (421395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (422385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (423435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (423835) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (423835) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (424425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (425415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (426435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (426895) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (426895) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (427425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (428475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (429435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (429925) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (429925) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (430455) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (431475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (432465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (432985) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (432985) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (433485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (434505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (435495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (436045) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (436045) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (436515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (437535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (438525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (439075) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (439075) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (439575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (440535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (441555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (442135) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (442135) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (442545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (443565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (444585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (445165) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (445165) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (445575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (446625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (447585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (448225) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (448225) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (448605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (449595) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (450645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (451315) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (451315) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (451635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (452625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (453645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (454315) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (454315) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (454635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (455655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (456645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (457375) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (457375) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (457665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (458655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (459675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (460405) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (460405) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (460695) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (461685) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (462705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (463465) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (463465) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (463725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (464715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (465735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (466525) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (466535) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (466725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (467745) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (468735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (469555) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (469565) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (469785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (470805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (471765) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (472615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (472625) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (472785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (473835) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (474825) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (475645) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (475655) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (475815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (476805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (477825) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (478705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (478715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (478845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (479865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (480885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (481765) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (481775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (481905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (482865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (483885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (484795) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (484805) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (484875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (485925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (486945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (487855) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (487865) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (487905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (488925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (489945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (490885) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (490895) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (490935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (491955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (492945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (493945) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (493955) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (493965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (494955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (495975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (497005) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (497015) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (497055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 119 bpm[0m
+[0;32mI (497985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (499005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (499995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (500035) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (500045) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (501015) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (502035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (503055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (503095) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (503105) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (504045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 118 bpm[0m
+[0;32mI (505035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (506055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (506125) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (506135) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (507045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (508065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (509115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 117 bpm[0m
+[0;32mI (509195) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (509195) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (510075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (511095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (512085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (512255) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (512255) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (513105) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 116 bpm[0m
+[0;32mI (514095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (515115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (515285) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (515285) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (516135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (517125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 115 bpm[0m
+[0;32mI (518145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (518345) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (518345) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (519165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (520155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 114 bpm[0m
+[0;32mI (521175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (521375) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (521375) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (522165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (523185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (524175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 113 bpm[0m
+[0;32mI (524435) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (524435) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (525195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (526215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (527205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m
+[0;32mI (527465) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (527465) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (528255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (529215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (530235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (530525) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (530525) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (531255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (532245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (533265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (533585) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (533585) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (534285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (535275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (536295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (536615) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (536615) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (537315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (538305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (539295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (539675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (539675) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (540315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (541335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (542365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (542705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (542705) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (543355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (544375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (545395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (545765) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (545765) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (546385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (547405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (548395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (548825) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (548825) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (549415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (550405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (551425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (551855) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (551855) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (552415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (553435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (554455) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (554915) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (554915) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (555475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (556525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (557485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (557945) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (557945) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (558505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (559495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (560515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (561005) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (561005) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (561505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (562525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (563515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (564065) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (564065) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (564535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (565555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (566545) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (567095) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (567095) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (567565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (568555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (569575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (570155) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (570155) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (570595) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (571615) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (572605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (573185) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (573185) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (573625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (574615) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (575635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (576245) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (576245) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (576655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (577645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (578635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (579305) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (579305) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (579655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (580675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (581665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (582335) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (582335) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (582715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (583675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (584695) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (585395) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (585395) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (585715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (586705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (587725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (588425) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (588425) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (588715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (589735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (590755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (591485) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (591485) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (591775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (592765) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (593785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (594545) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (594545) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (594775) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (595795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (596815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (597575) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (597575) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (597805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (598825) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (599815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (600635) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (600635) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (600835) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (601855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (602845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (603665) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (603665) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (603865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (604855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (605875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (606725) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (606725) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (606865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (607885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (608875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (609755) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (609765) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (609895) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (610915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (611905) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (612815) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (612825) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (612925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (613975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (614935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (615875) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (615885) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (615955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (616975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (617965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (618905) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (618915) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (619015) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (619975) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (620995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (621965) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (621975) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (621985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (623005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (624025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (624995) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (625005) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (625045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (626035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (627055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (628045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (628055) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (628065) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (629095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (630055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (631115) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (631125) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (631135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (632095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (633115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (634135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (634145) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (634155) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (635095) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (636115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (637135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (637205) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (637215) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (638125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (639145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (640135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (640235) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (640245) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (641155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (642145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (643165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (643295) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (643305) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (644155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (645145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (646165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (646355) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (646365) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (647155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (648175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (649165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (649385) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (649395) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (650155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (651175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (652225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (652455) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (652455) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (653185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (654175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (655195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (655515) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (655515) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (656185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (657205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (658195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (658545) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (658545) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (659215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (660235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (661225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (661605) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (661605) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (662245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (663265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (664255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (664635) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (664635) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (665275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (666265) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (667285) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (667695) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (667695) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (668275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (669295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (670315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (670725) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (670725) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (671335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (672325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (673315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (673785) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (673785) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (674335) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (675355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (676345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (676815) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (676815) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (677365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (678415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (679375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (679875) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (679875) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (680395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (681385) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (682435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (682935) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (682935) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (683425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (684415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (685435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (685965) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (685965) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (686435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (687455) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 60 bpm[0m
+[0;32mI (688475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (689055) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (689055) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (689465) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (690485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (691475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (692055) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (692055) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (692495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (693485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 61 bpm[0m
+[0;32mI (694505) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (695115) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (695115) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (695525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (696515) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (697535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (698175) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (698175) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (698525) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 62 bpm[0m
+[0;32mI (699575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (700535) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (701205) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (701205) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (701555) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (702575) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (703565) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 63 bpm[0m
+[0;32mI (704265) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (704265) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (704645) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (705605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (706625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 64 bpm[0m
+[0;32mI (707295) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (707295) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (707585) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (708605) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (709625) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (710355) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (710355) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (710675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 65 bpm[0m
+[0;32mI (711635) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (712655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (713415) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (713415) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (713675) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 66 bpm[0m
+[0;32mI (714665) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (715655) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (716445) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (716445) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (716705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 67 bpm[0m
+[0;32mI (717725) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (718685) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (719505) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (719505) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (719705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 68 bpm[0m
+[0;32mI (720695) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (721715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (722535) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (722535) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (722705) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 69 bpm[0m
+[0;32mI (723755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (724715) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 70 bpm[0m
+[0;32mI (725595) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (725595) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (725735) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (726755) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (727745) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 71 bpm[0m
+[0;32mI (728655) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (728655) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (728855) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (729785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 72 bpm[0m
+[0;32mI (730805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (731685) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (731685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (731795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (732785) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 73 bpm[0m
+[0;32mI (733805) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (734745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (734745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (734795) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 74 bpm[0m
+[0;32mI (735815) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (736835) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 75 bpm[0m
+[0;32mI (737775) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (737775) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (737825) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (738845) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (739925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 76 bpm[0m
+[0;32mI (740835) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (740835) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (740885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (741875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 77 bpm[0m
+[0;32mI (742865) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (743885) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 78 bpm[0m
+[0;32mI (743895) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (743895) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (744875) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (745955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 79 bpm[0m
+[0;32mI (746915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (746925) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (746925) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (747935) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 80 bpm[0m
+[0;32mI (748925) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (749915) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 81 bpm[0m
+[0;32mI (749985) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (749985) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (750965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (751955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 82 bpm[0m
+[0;32mI (752945) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (753015) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (753015) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (753965) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 83 bpm[0m
+[0;32mI (754955) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (756005) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 84 bpm[0m
+[0;32mI (756075) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (756085) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (757025) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (757985) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 85 bpm[0m
+[0;32mI (759065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (759105) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (759115) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (759995) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 86 bpm[0m
+[0;32mI (761045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (762035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 87 bpm[0m
+[0;32mI (762165) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (762175) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (763055) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (764045) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 88 bpm[0m
+[0;32mI (765035) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (765225) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (765235) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (766115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 89 bpm[0m
+[0;32mI (767075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (768065) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 90 bpm[0m
+[0;32mI (768255) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (768265) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (769085) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (770075) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 91 bpm[0m
+[0;32mI (771125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (771315) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (771325) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (772115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 92 bpm[0m
+[0;32mI (773135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (774125) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (774345) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (774355) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (775115) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 93 bpm[0m
+[0;32mI (776135) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (777155) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 94 bpm[0m
+[0;32mI (777405) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (777415) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (778145) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (779165) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 95 bpm[0m
+[0;32mI (780185) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (780465) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (780475) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (781175) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 96 bpm[0m
+[0;32mI (782195) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (783215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 97 bpm[0m
+[0;32mI (783495) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (783505) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (784205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (785225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 98 bpm[0m
+[0;32mI (786215) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (786555) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (786565) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (787205) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 99 bpm[0m
+[0;32mI (788225) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (789245) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 100 bpm[0m
+[0;32mI (789585) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (789595) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (790235) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (791255) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 101 bpm[0m
+[0;32mI (792275) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (792675) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (792685) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (793295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 102 bpm[0m
+[0;32mI (794315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (795305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (795705) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (795715) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (796295) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 103 bpm[0m
+[0;32mI (797315) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (798305) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 104 bpm[0m
+[0;32mI (798745) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (798745) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (799325) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (800345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 105 bpm[0m
+[0;32mI (801365) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (801805) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (801805) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (802355) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (803345) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 106 bpm[0m
+[0;32mI (804395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (804835) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (804835) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (805415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 107 bpm[0m
+[0;32mI (806375) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (807395) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (807895) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (807895) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (808415) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 108 bpm[0m
+[0;32mI (809405) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (810425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 109 bpm[0m
+[0;32mI (810955) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (810955) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (811445) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (812435) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (813425) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 110 bpm[0m
+[0;32mI (813985) GATTC_MULTIPLE_DEMO: 📥 Notificación recibida (11 bytes)[0m
+[0;32mI (813985) GATTC_MULTIPLE_DEMO: 🧭 Coordenadas Giroscopio: GX=-340, GY=158, GZ=-1[0m
+[0;32mI (814445) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (815495) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (816485) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 111 bpm[0m
+[0;32mI (817475) GATTC_MULTIPLE_DEMO: ❤️ Frecuencia cardíaca: 112 bpm[0m

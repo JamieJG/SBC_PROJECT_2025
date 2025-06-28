@@ -1,0 +1,343 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (633) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (963) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (993) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (993) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;31mE (1003) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (1003) main_task: Returned from app_main()[0m
+[0;32mI (1013) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (1013) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1023) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1033) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1033) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1033) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1043) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (4023) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (7043) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;31mE (10063) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (10063) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (13083) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (16103) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (19123) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (22143) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (25163) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (28183) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (31203) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (34223) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (37243) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (40263) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (43283) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (44173) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (44213) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (44303) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;32mI (45353) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (46303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (46303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (49333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (49333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (52363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (52373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (55393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (55403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (58423) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (58423) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (61443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (61453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (64473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (64483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (67503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (67503) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (70533) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (70533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (73553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (73563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (76583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (76583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (79613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (79613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (82643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (82653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (85673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (85683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (88703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (88703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (91733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (91733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (94753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (94763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (97783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (97783) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (100813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (100813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (103843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (103853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (106873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (106883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (109903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (109903) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (112933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (112933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (115953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (115963) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 39.0[0m
+[0;32mI (118983) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (118983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (122013) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (122013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (125043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (125053) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (128073) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (128083) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (131103) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (131103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (134133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (134133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (137163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (137173) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (140193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (140203) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (143223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (143223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (146253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (146253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 39.0[0m
+[0;32mI (149273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (149283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (152303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (152303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 39.0[0m
+[0;32mI (155333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (155333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (158363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (158373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (161393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (161403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (164423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (164423) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (167453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (167453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (170483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (170493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (173513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (173523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (176543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (176543) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (179573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (179573) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (182603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (182613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (185633) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (185633) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (188653) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (188663) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (191683) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (191693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (194713) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (194723) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (197743) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (197743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (200773) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (200773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (203803) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (203813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (206833) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (206843) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (209863) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (209863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (212893) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (212903) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (215923) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (215933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;31mE (218953) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (218953) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (221973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (221973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (225003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (225013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (228033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (228043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (231063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (231063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (234093) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (234093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (237123) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (237133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (240153) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (240163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (242103) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8[0m
+[0;32mI (242103) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x8[0m
+[0;33mW (243183) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (243183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (246203) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (246203) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (249223) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (249223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (252243) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (252243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (252713) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (252753) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (252833) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;32mI (253883) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (255263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (255263) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (258293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (258303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (261323) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (261323) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (264343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (264343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (267373) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (267383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (270403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (270413) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (273433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (273433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (276463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (276463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (279493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (279503) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (282523) dht: LOW bit timeout[0m
+[0;31mE (282523) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (285543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (285553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (287473) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8[0m
+[0;32mI (287473) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x8[0m
+[0;33mW (288573) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (288573) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (291593) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (291593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (294613) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (294613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (297633) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (297633) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (300653) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (300653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (303673) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (303673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (306693) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (306693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (309713) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (309713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (312733) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (312733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (315753) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (315753) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (318773) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (318773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (321793) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (321793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (324813) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (324813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (327833) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (327833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (330853) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (330853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (333873) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (333873) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (336893) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (336893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (339913) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (339913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (342933) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (342933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (345953) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (345953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (348973) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (348973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (351993) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (351993) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (355013) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (355013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (358033) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (358033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (361053) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (361053) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (364073) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (364073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (367093) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (367093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (370113) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (370113) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (373133) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (373133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (376153) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (376153) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (379173) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (379173) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (382193) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (382193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (385213) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (385213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (388233) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (388233) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (391253) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (391253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (394273) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (394273) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (397293) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (397293) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (400313) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (400313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (403333) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (403333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (406353) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (406353) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33

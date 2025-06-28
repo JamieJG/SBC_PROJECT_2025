@@ -1,0 +1,1441 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (943) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (963) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (973) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;31mE (973) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (983) main_task: Returned from app_main()[0m
+[0;32mI (993) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1013) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (4003) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (7023) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (10043) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (13063) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (16083) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (19103) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (22123) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (25143) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (28163) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (31183) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (34203) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (36313) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (36353) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (36443) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;33mW (37223) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (37223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (37233) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (40253) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (40253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (40263) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (43283) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (43283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (43293) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (46313) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (46313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (46313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (49343) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (49343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (49353) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (52373) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (52373) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (52383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+����������������������������������������������������������������0;33mW (55403) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (55403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (55413) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (58433) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (58433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (58433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (61463) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (61463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (61473) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (64493) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (64493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (64503) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (67523) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (67523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (67533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (69403) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (69403) BT_BTM: Device not found
+[0m
+[0;33mW (69403) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (69413) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (70063) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (70103) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (70193) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;33mW (70553) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (70553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (70563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (73583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (73583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (73593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (76613) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (76613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (76623) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (79643) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (79643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (79653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (82673) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (82673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (82683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (85703) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (85703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (85703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (88733) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (88733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (88743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (91763) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (91763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (91773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (94793) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (94793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (94803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (97823) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (97823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (97823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (100853) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (100853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (100863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (103313) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (103313) BT_BTM: Device not found
+[0m
+[0;33mW (103323) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (103323) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (103883) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (103883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (104193) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (104233) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (104493) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (106903) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (106903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (106913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (109933) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (109933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (109943) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (112963) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (112963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (112973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (115993) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (115993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (116003) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (119023) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (119023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (119033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (122053) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (122053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (122063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (125083) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (125083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (125093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (128113) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (128113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (128123) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (131143) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (131143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (131153) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (134173) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (134173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (134183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (137203) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (137203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (137213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (137293) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (137293) BT_BTM: Device not found
+[0m
+[0;33mW (137293) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (137293) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (137623) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (137663) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (137983) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (140233) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (140233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (140243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (143263) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (143263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (143273) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (146293) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (146293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (146303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (149323) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (149323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (149333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (152353) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (152353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (152363) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (155383) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (155383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (155393) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;31mE (158413) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (158413) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (161433) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (161433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (161433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (164463) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (164463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (164463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (167493) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (167493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (167493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (168453) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (168453) BT_BTM: Device not found
+[0m
+[0;33mW (168453) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8[0m
+[0;32mI (168463) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x8[0m
+[0;32mI (169953) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (169993) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (170083) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;33mW (170523) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (170523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (170533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (173553) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (173553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (173563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (176583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (176583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (176593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (179613) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (179613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (179623) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (182643) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (182643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (182653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (185673) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (185673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (185683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (188703) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (188703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (188713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (191733) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (191733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (191743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (194763) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (194763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (194763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (197793) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (197793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (197803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (200823) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (200823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (200833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (203333) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (203333) BT_BTM: Device not found
+[0m
+[0;33mW (203333) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (203333) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (203723) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (203763) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;31mE (203853) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (203853) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (204033) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (206883) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (206883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (206893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (209913) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (209913) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (209923) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (212943) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (212943) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (212953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (215973) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (215973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (215983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (219003) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (219003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (219013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (222033) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (222033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (222043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (225063) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (225063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (225073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (228093) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (228093) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (228103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (231123) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (231123) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (231133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (234153) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (234153) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (234163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (236843) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (236843) BT_BTM: Device not found
+[0m
+[0;33mW (236843) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (236843) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (237183) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (237183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (237233) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (237283) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (237543) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (240203) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (240203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (240213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (243233) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (243233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (243243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (246263) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (246263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (246273) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (249293) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (249293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (249303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (252323) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (252323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (252333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (255353) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (255353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (255363) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (258383) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (258383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (258393) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+����������������������������������������������������������������;33mW (261413) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (261413) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (261423) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (264443) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (264443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (264453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (267473) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (267473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (267483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+�sR=SPF9 12:21:46
+
+rst:0x3 (SWets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (943) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (973) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (973) main_task: Returned from app_main()[0m
+[0;32mI (973) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;31mE (973) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (993) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1003) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1013) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (4003) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (7023) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (10043) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (13063) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (16083) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (19103) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (22123) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;33mW (25143) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (26613) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (26693) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (26953) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (28163) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (28163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (28173) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (31193) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (31193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (31203) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;31mE (34223) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (34223) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (37243) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (37243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (37253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (40273) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (40273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (40283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (43303) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (43303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (43313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (46333) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (46333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (46343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (49363) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (49363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (49373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (52393) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (52393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (52403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (55423) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (55423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (55433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (58453) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (58453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (58463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (59813) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (59813) BT_BTM: Device not found
+[0m
+[0;33mW (59823) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (59823) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (60513) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (60573) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (60853) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (61483) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (61483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (61493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (64513) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (64513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (64523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (67543) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (67543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (67553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (70573) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (70573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (70583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (73603) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (73603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (73613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (76633) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (76633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (76643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (79663) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (79663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (79673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (82693) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (82693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (82703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (85723) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (85723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (85733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (88753) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (88753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (88763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (91783) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (91783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (91793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (93603) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (93603) BT_BTM: Device not found
+[0m
+[0;33mW (93603) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (93603) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (93843) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (93883) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (94163) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (94813) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (94813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (94823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (97843) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (97843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (97853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (100873) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (100873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (100883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (103903) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (103903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (103913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (106933) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (106933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (106943) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (109963) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (109963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (109973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (112993) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (112993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (113003) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (116023) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (116023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (116033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (119053) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (119053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (119063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (122083) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (122083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (122093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (125113) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (125113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (125123) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (127083) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (127083) BT_BTM: Device not found
+[0m
+[0;33mW (127083) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (127083) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (127393) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (127463) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (127713) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (128143) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (128143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (128143) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (131173) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (131173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (131183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;31mE (134203) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (134203) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (137223) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (137223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (137233) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (140253) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (140253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (140263) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (143283) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (143283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (143293) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (146313) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (146313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (146323) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (149343) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (149343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (149353) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (152373) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (152373) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (152383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (155403) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (155403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (155413) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (158433) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (158433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (158443) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (160663) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (160673) BT_BTM: Device not found
+[0m
+[0;33mW (160673) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (160673) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (161023) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (161063) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (161333) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;31mE (161463) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (161463) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (164483) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (164483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (164483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (167513) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (167513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (167513) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (170543) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (170543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (170543) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (173573) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (173573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (173573) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (176603) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (176603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (176603) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (179633) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (179633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (179633) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (182663) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (182663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (182663) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (185693) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (185693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (185693) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (188723) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (188723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (188723) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (191753) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (191753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (191753) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (194253) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (194253) BT_BTM: Device not found
+[0m
+[0;33mW (194253) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (194263) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (194783) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (194783) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;32mI (194843) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (194883) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (195123) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (197803) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (197803) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (197813) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (200833) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (200833) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (200843) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (203863) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (203863) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (203873) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (206893) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (206893) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (206903) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (209923) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (209923) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (209933) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (212953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (212953) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (212953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;33mW (215973) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (215973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (215983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (219003) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (219003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (219013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (222033) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (222033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (222043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (225063) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (225063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (225073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (227933) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (227933) BT_BTM: Device not found
+[0m
+[0;33mW (227933) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (227933) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;33mW (228093) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (228093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (228423) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (228463) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (228723) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;31mE (231113) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (231113) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (234133) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (234133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (234133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (237163) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (237163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (237163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (240193) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (240193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (240193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (243223) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (243223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (243223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (246253) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (246253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (246253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (249283) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (249283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (249283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (252313) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (252313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (252313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (255343) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (255343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (255343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (258373) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (258373) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (258373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (261403) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (261403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (261403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (261503) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (261503) BT_BTM: Device not found
+[0m
+[0;33mW (261503) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (261513) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (262213) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (262253) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (262513) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (264433) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (264433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (264433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (267463) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (267463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (267463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (270493) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (270493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (270493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (273523) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (273523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (273523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (276553) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (276553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (276553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (279583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (279583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (279583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (282613) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (282613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (282613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (285643) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (285643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (285643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (288673) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (288673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (288673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (291703) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (291703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (291713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (294733) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (294733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (294743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (295313) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (295313) BT_BTM: Device not found
+[0m
+[0;33mW (295313) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (295323) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (295993) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (296033) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (296293) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (297763) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (297763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (297773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (300793) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (300793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (300803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (303823) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (303823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (303833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (306853) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (306853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (306863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (309883) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (309883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (309893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (312913) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (312913) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (312923) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (315943) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (315943) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (315953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (318973) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (318973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (318983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (322003) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (322003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (322013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (325033) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (325033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (325043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (328063) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (328063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (328073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (329183) BT_BTM: btm_sec_clr_temp_auth_service() - no dev CB
+[0m
+[0;31mE (329183) BT_BTM: Device not found
+[0m
+[0;33mW (329183) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (329193) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x13[0m
+[0;32mI (329703) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (329743) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (329993) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;31mE (331093) dht: LOW bit timeout[0m
+[0;31mE (331093) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (334113) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (334113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (334113) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (337143) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (337143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (337143) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (340173) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (340173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (340173) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (343203) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (343203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (343203) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (346233) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (346233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (346233) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (349263) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (349263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (349263) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (352293) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (352293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (352293) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (355323) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (355323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (355323) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (358353) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (358353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (358353) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (361383) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (361383) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (361383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (364413) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (364413) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (364413) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (367443) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (367443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (367443) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (370473) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (370473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (370473) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (373503) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (373503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (373503) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (376533) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (376533) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (376533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (379563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (379563) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (379563) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;33mW (382583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (382583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (382593) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (385613) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (385613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (385623) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (388643) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (388643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (388653) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (391673) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (391673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (391683) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (394703) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (394703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (394713) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (397733) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (397733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (397743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (400763) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (400763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (400773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (403793) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (403793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (403803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (406823) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (406823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (406833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (409853) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (409853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (409863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (412883) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (412883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (412893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (415913) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (415913) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (415923) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (418943) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (418943) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (418953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (421973) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (421973) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (421983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (425003) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (425003) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (425013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (428033) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (428033) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (428043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (431063) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (431063) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (431073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (434093) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (434093) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (434103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (437123) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (437123) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (437133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;33mW (440153) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (440153) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (440163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (443183) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (443183) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (443193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (446213) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (446213) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (446223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (449243) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (449243) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (449253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (452273) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (452273) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (452283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (455303) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (455303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (455313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (458333) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (458333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (458343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (461363) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (461363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (461373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (464393) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (464393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (464403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (467423) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (467423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (467433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (470453) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (470453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (470463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (473483) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (473483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (473493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (476513) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (476513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (476523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (479543) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (479543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (479553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (482573) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (482573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (482583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (485603) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (485603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (485613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (488633) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (488633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (488643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (491663) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (491663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (491673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (494693) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (494693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (494703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (497723) dht: LOW bit timeout[0m
+[0;31mE (497723) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (500743) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (500743) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (500743) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (503773) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (503773) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (503773) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (506803) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (506803) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (506803) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (509833) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (509833) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (509833) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (512863) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (512863) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (512863) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (515893) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (515893) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (515893) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (518923) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (518923) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (518923) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (521953) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (521953) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (521953) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (524983) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (524983) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (524983) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (528013) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (528013) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (528013) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (531043) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (531043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (531043) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (534073) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (534073) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (534073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 36.0[0m
+[0;33mW (537103) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (537103) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (537103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (540133) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (540133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (540133) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (543163) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (543163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (543163) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (546193) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (546193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (546193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (549223) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (549223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (549223) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (552253) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (552253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (552253) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (555283) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (555283) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (555283) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (558313) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (558313) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (558313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (561343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (561343) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (561343) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;33mW (564363) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (564363) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (564373) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (567393) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (567393) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (567403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (570423) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (570423) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (570433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (573453) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (573453) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (573463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (576483) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (576483) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (576493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (579513) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (579513) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (579523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (582543) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (582543) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (582553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (585573) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (585573) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (585583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (588603) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (588603) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (588613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (591633) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (591633) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (591643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (594663) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (594663) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (594673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (597693) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (597693) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (597703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (600723) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (600723) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (600733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;33mW (603753) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (603753) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (603763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (606783) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (606783) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (606793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (609813) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (609813) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (609823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (612843) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (612843) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (612853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (615873) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (615873) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (615883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (618903) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (618903) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (618913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (621933) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (621933) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (621943) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (624963) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (624963) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (624973) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (627993) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (627993) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (628003) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (631023) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (631023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (631033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (634053) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (634053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (634063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (637083) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (637083) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (637093) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (640113) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (640113) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (640123) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (643143) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (643143) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (643153) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (646173) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (646173) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (646183) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (649203) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (649203) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (649213) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (652233) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (652233) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (652243) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (655263) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (655263) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (655273) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (658293) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (658293) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (658303) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (661323) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (661323) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (661333) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (664353) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (664353) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (664363) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (667383) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (667383) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;33mW (670403) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (670403) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (670403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (673433) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (673433) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (673433) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (676463) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (676463) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (676463) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (679493) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (679493) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (679493) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (682523) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (682523) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (682523) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (685553) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (685553) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (685553) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (688583) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (688583) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (688583) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (691613) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (691613) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (691613) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (694643) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (694643) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (694643) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (697673) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (697673) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (697673) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (700703) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (700703) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (700703) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 39.0[0m
+[0;33mW (703733) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (703733) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (703733) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;33mW (706763) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (706763) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (706763) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;33mW (709793) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (709793) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (709793) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (712823) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (712823) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (712823) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (715853) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (715853) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (715853) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (718883) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (718883) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (718883) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (721913) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (721913) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (721913) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (953) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (973) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (983) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (983) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (983) main_task: Returned from app_main()[0m
+[0;32mI (1003) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (1003) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1003) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1023) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1023) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (4003) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (4063) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (4103) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (4363) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;33mW (7023) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (7023) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (7033) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (10053) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (10053) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (10063) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (12723) BT_BTM: Device not found
+[0m
+[0;33mW (12723) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8[0m
+[0;32mI (12723) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x8[0m
+[0;33mW (13083) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (13083) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (16103) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (16103) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2025 11:32:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20a64h (133732) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00030a8c vaddr=3ffbdb60 size=04c14h ( 19476) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000356a8 vaddr=40080000 size=0a970h ( 43376) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7aa68h (502376) map[0m
+[0;32mI (348) esp_image: segment 4: paddr=000baa90 vaddr=4008a970 size=0cb00h ( 51968) load[0m
+[0;32mI (380) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) cpu_start: Multicore app[0m
+[0;32mI (401) cpu_start: Pro cpu start user code[0m
+[0;32mI (401) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (401) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     gatt_server_demos[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (414) app_init: Compile time:     Jun 28 2025 11:32:08[0m
+[0;32mI (420) app_init: ELF file SHA256:  34cb7446a...[0m
+[0;32mI (425) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (430) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (435) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (440) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (458) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFC7208 len 00018DF8 (99 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (483) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 40097470 len 00008B90 (34 KiB): IRAM[0m
+[0;32mI (497) spi_flash: detected chip: generic[0m
+[0;32mI (500) spi_flash: flash io: dio[0m
+[0;33mW (504) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (518) coexist: coex firmware version: 4482466[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (543) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (543) BTDM_INIT: Bluetooth MAC: 2c:bc:bb:0d:24:d2[0m
+[0;32mI (543) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (943) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;31mE (973) dht: Initialization error, problem in phase 'B'[0m
+[0;31mE (973) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (973) main_task: Returned from app_main()[0m
+[0;32mI (973) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (993) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (1003) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (1003) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (1003) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (1013) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (1023) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;33mW (3993) DHT_NOTIFY: ⚠️ Cliente no conectado.[0m
+[0;32mI (6683) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (6693) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (6853) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;33mW (7013) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (7013) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (7023) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (7723) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (10043) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (10053) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (13073) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (13073) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (16103) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (16113) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (19133) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (19143) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (22163) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (22173) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (25193) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (25193) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (28223) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (28233) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (31253) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (31263) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;31mE (34283) dht: Checksum failed, invalid data received from sensor[0m
+[0;31mE (34283) DHT_NOTIFY: ❌ Fallo al leer DHT11[0m
+[0;32mI (37303) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (37313) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (40333) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (40343) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (43273) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8[0m
+[0;32mI (43273) GATTS_DEMO: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x8[0m
+[0;33mW (43363) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (43363) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (46383) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (46383) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (49403) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (49403) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;33mW (52423) BT_LOG: esp_ble_gatts_send_indicate, The connection not created.[0m
+[0;32mI (52423) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (54283) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 08:d1:f9:cb:bd:3e:[0m
+[0;32mI (54323) GATTS_DEMO: packet length updated: rx = 251, tx = 251, status = 0[0m
+[0;32mI (54413) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;33mW (55443) BT_GATT: attribute value too long, to be truncated to 20[0m
+[0;32mI (55443) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (55453) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (55463) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (58473) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (58483) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (61503) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (61513) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 38.0[0m
+[0;32mI (64533) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (64533) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (67563) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (67563) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
+[0;32mI (70593) GATTS_DEMO: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (70603) DHT_NOTIFY: 🔁 Notificado: Temp: 30.0, Hum: 37.0[0m
